@@ -1,0 +1,98 @@
+.repository{
+    width: 22.3333%;
+    flex-basis: 22.3333%;
+    min-width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.repository_pink{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+.repository_light-green{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.repository_blue{
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+.repository_purpl{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.repository_orange{
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+.repository__header{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.repository__title{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.repository__title:after{
+    content: "";
+    display: block;
+    background-color: #191C6D;
+    width: 100%;
+    height: 2px;
+    margin-top: 2px;
+    border-radius: 2px;
+    transform: scale(0);
+}
+
+.repository__title:hover {
+    color: #191C6D;
+}
+
+.repository__title:hover:after{
+    transform: scale(1);
+}
+
+.repository__stars{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.repository__stars-icon{
+    height: 16px;
+    margin-right: 2px;
+}
+.repository__octicon-star path{
+   fill: #ffffff;
+}
+.repository__stars-text{
+    margin-right: 4px;
+}
+
+.repository__stars-count{
+    font-weight: 700;
+}
+
+.repository__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.repository__commit{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.repository__commit-text{
+    padding-right: 5px;
+}
+
+.repository__octicon-mark-github path{
+    fill: #ffffff
+}
+
+

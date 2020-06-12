@@ -1,0 +1,142 @@
+.repository-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+    min-height: 100vh;
+    color: #1f1f1f;
+}
+.repository-card__left-side{
+    padding-right: 5%;
+    margin-bottom: 20px;
+}
+.repository-card__header{
+    margin-bottom: 35px;
+}
+
+.repository-card__title{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    line-height: 0.8;
+}
+.repository-card__stars{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.repository-card__stars-icon{
+    height: 16px;
+    margin-right: 2px;
+}
+
+
+.repository-card__stars-text{
+    margin-right: 4px;
+}
+
+.repository-card__stars-count{
+    font-weight: 700;
+}
+
+.repository-card__commit{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.repository-card__commit-text{
+    padding-right: 5px;
+}
+
+.repository-card__octicon-star path{
+    fill: #1f1f1f;
+}
+.repository-card__description{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.repository-card__owner-title{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.repository-card__owner{
+    margin-bottom: 35px;
+}
+
+.repository-card__owner-main{
+    display: flex;
+    align-items: center;
+}
+.repository-card__owner-img-wrapper{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.repository-card__owner-img{
+    width: 100%;
+    height: 100%; 
+}
+.repository-card__owner-nickname{
+    margin-left: 15px;
+    font-size: 2em;
+    color: #1f1f1f;
+    font-weight: 600;
+    text-decoration: none;
+}
+.repository-card__langs-title{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.repository-card__langs-list-item{
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    font-size: 1.25em;
+}
+.repository-card__langs-list-item:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+}
+
+.repository-card__contributors-title{
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.repository-card__contributors-item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.repository-card__contributor-img-wrapper{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.repository-card__contributor-img{
+    width: 100%;
+    height: 100%;
+}
+.repository-card__contributor-info{
+    margin-left: 10px;
+}
+.repository-card__contributor-nickname{
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.repository-card__contributor-contributions-amount{
+    font-weight: 600;
+}
