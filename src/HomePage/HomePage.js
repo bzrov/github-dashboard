@@ -157,7 +157,9 @@ export const HomePage = () => {
     }
 
     const updateData = () => {
-        const dataToUpdate = {
+        const data = JSON.parse(localStorage.getItem("github_dashboard"))
+        const dataToUpdate = { 
+            ...data,
             search_value: searchValue,
             page_number: pageNumber,
         }

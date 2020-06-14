@@ -31,8 +31,6 @@ export const RepoPreview = ({repositoryData}) => {
             <Link to={{
                 pathname:`/repository-card/${repositoryData.name}`,
                 repositoryData: repositoryData,
-                repositoryThemes: repositoryThemes,
-                formatDate: (date)=> formatDate(date)
                 }}
                 style={{ textDecoration: 'none' }}>
                 <p className="repository__title" >{repositoryData.name}</p>
