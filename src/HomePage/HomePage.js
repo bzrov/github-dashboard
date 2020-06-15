@@ -10,14 +10,11 @@ export const HomePage = () => {
     const [pageNumber,setPageNumber] = useState(localStorage.getItem("github_dashboard") ? JSON.parse(localStorage.getItem("github_dashboard")).page_number : 1)
     const [firstPage,setFirstPage] = useState(true)
     const [lastPage,setLastPage] = useState(false)
-    const isMountRef = useRef(true);
+    const isMountRef = useRef(false);
  
     const requestUrl = `https://api.github.com/search/repositories?q=${searchValue}&sort=stars&order=desc&per_page=10&page=${pageNumber}`
 
-    useEffect(() => {
-        isMountRef.current = false;
-        return 
-      }, []);
+   
 
     useEffect(()=>{
         if(!searchValue.trim()){
@@ -56,11 +53,18 @@ export const HomePage = () => {
             }
             searchRepos(requestUrl)
         }
+        
         if(isMountRef.current){
             setPageNumber(1)
         }
+
         updateData();
     },[searchValue])
+
+    useEffect(() => {
+        isMountRef.current = true;
+        return 
+      }, []);
 
     useEffect(()=>{
         const searchRepos = async(targetUrl)=>{
